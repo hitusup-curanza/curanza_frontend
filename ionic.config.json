@@ -1,0 +1,7 @@
+{
+  "name": "curanza",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
