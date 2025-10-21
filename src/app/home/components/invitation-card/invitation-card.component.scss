@@ -1,0 +1,41 @@
+ .invitation-card {
+   width: 45%;
+   color: #fff;
+   background-color: #ff6600;
+
+   h2 {
+
+     font-size: 4rem;
+     font-weight: 700;
+     margin-bottom: 1rem;
+     letter-spacing: -1px;
+     text-align: center;
+   }
+
+   p {
+     font-size: 1.6rem;
+     font-weight: 400;
+     margin-bottom: 1.2rem;
+     line-height: 1.5;
+     text-align: center;
+   }
+
+   .invitation-btn {
+     margin-top: 2rem;
+     background-color: #ffffff;
+     color: #ff6600;
+     font-weight: 700;
+     font-size: 1rem;
+     border: none;
+     border-radius: 2rem;
+     padding: 0.6rem 1.5rem;
+     transition: background 0.2s;
+     cursor: pointer;
+
+     &:hover {
+       color: #ffffff;
+       background-color: #383737;
+     }
+
+   }
+ }

@@ -1,0 +1,29 @@
+:host {
+  position: relative; // Ensures progress bar can be positioned
+}
+
+/* Move progress bar to bottom */
+::ng-deep .swiper-pagination-progressbar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  z-index: 10;
+}
+
+/* Change progress bar fill color */
+::ng-deep .swiper-pagination-progressbar-fill {
+  background-color: #007bff;
+}
+
+/* Change arrow color */
+::ng-deep .swiper-button-next,
+::ng-deep .swiper-button-prev {
+  color: #007bff;
+}
+
+/* Adjust slide spacing */
+::ng-deep swiper-slide {
+  margin-top: 20px;
+}

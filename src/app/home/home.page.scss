@@ -78,9 +78,7 @@
     margin-bottom: 2rem;
     letter-spacing: -1px;
 
-    .dot {
-      color: #ff6600;
-    }
+
   }
 
   p {
@@ -108,6 +106,40 @@
   }
 }
 
+// ---------------------
+// ✨ Feature journeys-section
+// ---------------------
+
+.Featurejourneys-section {
+  text-align: center;
+  margin: 1rem auto 0;
+  padding: 2rem;
+  max-width: 1000px;
+  color: #222;
+  font-size: 1rem;
+
+  h2 {
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 2rem;
+    letter-spacing: -1px;
+
+
+  }
+
+  p {
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 1.2rem;
+    line-height: 1.5;
+  }
+
+}
+
+.dot {
+  color: #ff6600;
+}
+
 // ==========================
 // 📲 Tablet Styles (601–1024)
 // ==========================
@@ -132,7 +164,7 @@
     padding: 0.6rem 1.5rem;
   }
 
-  .spark-section {
+  .spark-section,.Featurejourneys-section {
     h2 {
       font-size: 2.5rem;
     }
@@ -175,7 +207,7 @@
     padding: 1rem 0;
   }
 
-  .spark-section {
+  .spark-section,.Featurejourneys-section {
     h2 {
       font-size: 3rem;
     }
@@ -190,5 +222,4 @@
     }
   }
 }
-
 

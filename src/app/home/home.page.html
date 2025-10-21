@@ -1,33 +1,46 @@
 <ion-content>
-<div class="wrapper">
-  <app-navbar></app-navbar>
-  <div class="what-if-banner ">
-    <h1> What if your next<br> journey changed<br>everything<span style="color: #ff6600;">?</span> </h1>
-    <p>Stop dreaming. Start becoming.</p>
-    <p>This is where your plot twist begins — one adventure, one "yes," <br>one unforgettable story.</p>
-    <button class="btn rounded-5 beginStorybtn mx-auto">Begin Your Story</button>
+  <div class="wrapper">
+    <app-navbar></app-navbar>
+    <div class="what-if-banner ">
+      <h1> What if your next<br> journey changed<br>everything<span style="color: #ff6600;">?</span> </h1>
+      <p>Stop dreaming. Start becoming.</p>
+      <p>This is where your plot twist begins — one adventure, one "yes," <br>one unforgettable story.</p>
+      <button class="btn rounded-5 beginStorybtn mx-auto">Begin Your Story</button>
 
+    </div>
   </div>
-</div>
-<div class="spark-section">
-  <h2>
-    The Spark<span class="dot">.</span>
-  </h2>
-  <p>
-    Imagine the first time you step off the plane into a world that feels entirely new—your pulse racing as warm air,
-    foreign accents, and unseen vistas envelope you. That rush of untold stories—that's the spark we ignite.
-  </p>
-  <p>
-    Welcome to Curanza: a canvas for solo heroines, LGBTQ+ visionaries, dreamers, and audacious rebels to stoke one
-    another's inner fires. Here, a single ember of curiosity bursts into a conflagration of sisterhood, awe, and soul
-    rebirth.
-  </p>
-  <button class="spark-invite-btn">Request Invite</button>
-</div>
+  <div class="spark-section">
+    <h2>
+      The Spark<span class="dot">.</span>
+    </h2>
+    <p>
+      Imagine the first time you step off the plane into a world that feels entirely new—your pulse racing as warm air,
+      foreign accents, and unseen vistas envelope you. That rush of untold stories—that's the spark we ignite.
+    </p>
+    <p>
+      Welcome to Curanza: a canvas for solo heroines, LGBTQ+ visionaries, dreamers, and audacious rebels to stoke one
+      another's inner fires. Here, a single ember of curiosity bursts into a conflagration of sisterhood, awe, and soul
+      rebirth.
+    </p>
+    <button class="spark-invite-btn">Request Invite</button>
+  </div>
 
 
-<app-marquee-effect></app-marquee-effect>
-<app-trip-card></app-trip-card>
+  <app-marquee-effect></app-marquee-effect>
 
-<!-- <router-outlet></router-outlet> -->
+  <div class="Featurejourneys-section">
+    <h2> Featured Journeys<span class="dot">.</span></h2>
+    <p> Handpicked destinations, blending adventure with cultural immersion, designed for authentic bonds.</p>
+  </div>
+  <app-feature-journey></app-feature-journey>
+
+  <div class="Featurejourneys-section">
+    <h2> Adventures for Every Soul<span class="dot">.</span></h2>
+    <p> From festivals to mindful escapes, discover your perfect journey.</p>
+  </div>
+  <app-feature-journey></app-feature-journey>
+
+  <app-invitation-card></app-invitation-card>
+
+  <!-- <router-outlet></router-outlet> -->
 </ion-content>
