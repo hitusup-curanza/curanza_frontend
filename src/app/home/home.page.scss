@@ -1,27 +1,194 @@
-#container {
+// =====================
+// 🔤 Base (Mobile-first)
+// =====================
+
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100vw;
+  background: url('/assets/hot-air-balloons-6757939_1280.jpg') center center / cover no-repeat;
+  position: relative;
+}
+
+// ---------------------
+// 🎯 What-If Banner
+// ---------------------
+.what-if-banner {
+  position: relative;
+  z-index: 2;
+  padding: 2rem 1rem 0;
   text-align: center;
+  color: #fff;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+  h1 {
+    font-size: 2rem;
+    font-weight: 800;
+    line-height: 1.1;
+  }
+
+  p:first-of-type {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 0.7rem;
+  }
+
+  p:nth-of-type(2) {
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 1.2rem;
+  }
 }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
+.beginStorybtn {
+  margin-top: 1.2rem;
+  width: 10rem;
+  color: #ff6600;
+  border: 2px solid #ff6600;
+  background: transparent;
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  transition: all 0.2s ease;
+
+  &:hover {
+    color: #fff;
+    background-color: #1f1d1d;
+    border: none;
+  }
 }
 
-#container p {
-  font-size: 16px;
-  line-height: 22px;
+// ---------------------
+// ✨ Spark Section
+// ---------------------
+.spark-section {
+  text-align: center;
+  margin: 4rem auto 0;
+  padding: 2rem;
+  max-width: 1000px;
+  color: #222;
+  font-size: 1rem;
 
-  color: #8c8c8c;
+  h2 {
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 2rem;
+    letter-spacing: -1px;
 
-  margin: 0;
+    .dot {
+      color: #ff6600;
+    }
+  }
+
+  p {
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 1.2rem;
+    line-height: 1.5;
+  }
+
+  .spark-invite-btn {
+    margin-top: 2rem;
+    background: #181818;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1rem;
+    border: none;
+    border-radius: 2rem;
+    padding: 0.6rem 1.5rem;
+    transition: background 0.2s;
+    cursor: pointer;
+
+    &:hover {
+      background: #ff6600;
+    }
+  }
 }
 
-#container a {
-  text-decoration: none;
+// ==========================
+// 📲 Tablet Styles (601–1024)
+// ==========================
+@media (min-width: 601px) and (max-width: 1024px) {
+  .what-if-banner {
+    h1 {
+      font-size: 3rem;
+    }
+
+    p:first-of-type {
+      font-size: 1.6rem;
+    }
+
+    p:nth-of-type(2) {
+      font-size: 1.2rem;
+    }
+  }
+
+  .beginStorybtn {
+    width: 12rem;
+    font-size: 1rem;
+    padding: 0.6rem 1.5rem;
+  }
+
+  .spark-section {
+    h2 {
+      font-size: 2.5rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+    }
+
+    .spark-invite-btn {
+      font-size: 1.1rem;
+      padding: 0.7rem 2rem;
+    }
+  }
 }
+
+// ==============================
+// 💻 Large Screens (≥ 1025px)
+// ==============================
+@media (min-width: 1025px) {
+  .what-if-banner {
+    padding-top: 4rem;
+    min-height: 70vh;
+
+    h1 {
+      font-size: 5rem;
+    }
+
+    p:first-of-type {
+      font-size: 2.2rem;
+    }
+
+    p:nth-of-type(2) {
+      font-size: 1.3rem;
+    }
+  }
+
+  .beginStorybtn {
+    width: 20rem;
+    font-size: 1.2rem;
+    padding: 1rem 0;
+  }
+
+  .spark-section {
+    h2 {
+      font-size: 3rem;
+    }
+
+    p {
+      font-size: 1.25rem;
+    }
+
+    .spark-invite-btn {
+      font-size: 1.25rem;
+      padding: 0.7rem 2.5rem;
+    }
+  }
+}
+
+

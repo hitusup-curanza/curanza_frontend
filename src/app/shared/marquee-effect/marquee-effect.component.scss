@@ -1,0 +1,72 @@
+// ===============================
+// 🎬 Marquee Container Styles
+// ===============================
+.marquee,
+.css-marquee,
+marquee {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #fafafa;
+  padding: 0.5rem 0;
+  margin-top: 3rem;
+  overflow: hidden;
+  border-top: 1px solid rgba(0, 0, 0, 0.04);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+// ===============================
+// 🟠 Highlighted Dash Style
+// ===============================
+.marquee-dash {
+  color: #ff6600;
+  padding: 0 0.35rem;
+}
+
+// ===============================
+// 📝 Typography for Content
+// ===============================
+.marquee,
+.css-marquee__inner,
+marquee {
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  white-space: nowrap;
+  font-size: clamp(1.1rem, 3.5vw, 2.6rem);
+  color: inherit;
+}
+
+// ===============================
+// 🎥 CSS Marquee Animation
+// ===============================
+.css-marquee {
+  position: relative;
+}
+
+.css-marquee__inner {
+  display: inline-block;
+  will-change: transform;
+  animation: marquee-move 12s linear infinite;
+}
+
+// 👇 Keyframes for Left-to-Right Scroll
+@keyframes marquee-move {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%); // Assumes content is duplicated
+  }
+}
+
+// ===============================
+// ♿ Accessibility: Reduced Motion
+// ===============================
+@media (prefers-reduced-motion: reduce) {
+  .css-marquee__inner,
+  marquee {
+    animation: none !important;
+    scroll-behavior: auto;
+  }
+}
