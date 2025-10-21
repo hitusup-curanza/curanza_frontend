@@ -1,0 +1,1 @@
+# curanza_frontend
