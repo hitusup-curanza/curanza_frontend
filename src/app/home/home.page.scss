@@ -2,26 +2,30 @@
 // 🔤 Base (Mobile-first)
 // =====================
 
-
 .wrapper {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
   width: 100vw;
   background: url('/assets/hot-air-balloons-6757939_1280.jpg') center center / cover no-repeat;
-  position: relative;
+  position: relative; // needed for absolute centering
 }
 
 // ---------------------
-// 🎯 What-If Banner
+// 🎯 What-If Banner (Centered)
 // ---------------------
 .what-if-banner {
-  position: relative;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   z-index: 2;
-  padding: 2rem 1rem 0;
+  padding: 2rem 1rem;
   text-align: center;
   color: #fff;
   text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 800px;
 
   h1 {
     font-size: 2rem;
@@ -57,9 +61,10 @@
   &:hover {
     color: #fff;
     background-color: #1f1d1d;
-    border: none;
+    border-color: transparent; // ✅ instead of border: none
   }
 }
+
 
 // ---------------------
 // ✨ Spark Section
@@ -77,8 +82,6 @@
     font-weight: 800;
     margin-bottom: 2rem;
     letter-spacing: -1px;
-
-
   }
 
   p {
@@ -109,7 +112,6 @@
 // ---------------------
 // ✨ Feature journeys-section
 // ---------------------
-
 .Featurejourneys-section {
   text-align: center;
   margin: 1rem auto 0;
@@ -123,8 +125,6 @@
     font-weight: 800;
     margin-bottom: 2rem;
     letter-spacing: -1px;
-
-
   }
 
   p {
@@ -133,7 +133,6 @@
     margin-bottom: 1.2rem;
     line-height: 1.5;
   }
-
 }
 
 .dot {
@@ -145,7 +144,10 @@
 // ==========================
 @media (min-width: 601px) and (max-width: 1024px) {
   .what-if-banner {
+    padding: 2rem;
+
     h1 {
+      width: 100%;
       font-size: 3rem;
     }
 
@@ -164,7 +166,8 @@
     padding: 0.6rem 1.5rem;
   }
 
-  .spark-section,.Featurejourneys-section {
+  .spark-section,
+  .Featurejourneys-section {
     h2 {
       font-size: 2.5rem;
     }
@@ -185,11 +188,11 @@
 // ==============================
 @media (min-width: 1025px) {
   .what-if-banner {
-    padding-top: 4rem;
-    min-height: 70vh;
+    padding: 3rem 2rem;
 
     h1 {
-      font-size: 5rem;
+      width: 100%;
+      font-size: 4rem;
     }
 
     p:first-of-type {
@@ -207,7 +210,8 @@
     padding: 1rem 0;
   }
 
-  .spark-section,.Featurejourneys-section {
+  .spark-section,
+  .Featurejourneys-section {
     h2 {
       font-size: 3rem;
     }
@@ -222,4 +226,3 @@
     }
   }
 }
-
