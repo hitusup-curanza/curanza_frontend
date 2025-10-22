@@ -58,7 +58,7 @@
 }
 
 /* 📱 Tablet (768px–1024px) */
-@media (max-width: 1024px) and (min-width: 768px) {
+@media (min-width: 601px) and (max-width: 1024px) {
   .invitation-card {
     width: 70%;
     padding: 2rem 1.5rem;

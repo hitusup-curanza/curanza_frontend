@@ -7,6 +7,7 @@ import { register } from 'swiper/element/bundle';
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { FeatureJourneyComponent } from './components/feature-journey/feature-journey.component';
 import { InvitationCardComponent } from './components/invitation-card/invitation-card.component';
+import { ScheduleCallComponent } from './schedule-call/schedule-call.component';
 
 register();
 
@@ -14,7 +15,7 @@ register();
   selector: 'app-home',
   templateUrl: 'home.page.html',
   styleUrls: ['home.page.scss'],
-  imports: [IonContent,MarqueeEffectComponent,NavbarComponent,FeatureJourneyComponent,InvitationCardComponent],
+  imports: [IonContent,MarqueeEffectComponent,NavbarComponent,FeatureJourneyComponent,ScheduleCallComponent ,InvitationCardComponent,TripCardComponent,IonHeader, IonToolbar, IonTitle],
 })
 export class HomePage {
   constructor() {}

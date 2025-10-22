@@ -1,0 +1,84 @@
+// Component styles (scoped to this component)
+
+.sync-slay-section {
+  // text-align: center;
+  background-color: #ffffff;
+  // We used Bootstrap utilities like py-5 and px-3 in the HTML,
+  // so we only need to set the custom appearance here.
+}
+
+.heading-text {
+  font-size: 60px;
+  /* Large font size for the main heading */
+  font-weight: 900;
+  /* Extra bold */
+  color: #212529;
+  line-height: 1.1;
+
+  // Responsive adjustment for smaller screens
+  @media (max-width: 768px) {
+    font-size: 24px;
+  }
+}
+
+.highlight-text {
+  color: #F78F3D;
+  /* Orange color for the question mark and dot */
+}
+
+.sub-text {
+  max-width: 600px;
+  /* Limit width for the paragraph (mx-auto centers it) */
+  font-size: 20px;
+  color: #495057;
+
+  @media (max-width: 768px) {
+    font-size: 14px;
+  }
+}
+
+.btn-schedule {
+  background-color: #F76B1D;
+  /* The primary orange color */
+  border-color: #F76B1D;
+  color: #ffffff;
+  font-size: 16px;
+  padding: 0.75rem 2.5rem;
+  font-weight: 600;
+  transition: background-color 0.2s; // Smooth transition
+
+  &:hover {
+    background-color: #e55c11;
+    /* Slightly darker on hover */
+    border-color: #e55c11;
+  }
+}
+
+.email-text {
+  font-size: 1rem;
+  color: #6c757d;
+}
+
+.email-link {
+  color: #212529;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+
+  &:hover {
+    color: #F76B1D;
+  }
+}
+
+
+.btn-Next {
+
+  background-color: #F76B1D;
+  /* The primary orange color */
+  border-color: #F76B1D;
+  color: #ffffff;
+  font-size: 14px;
+  padding: 0.75rem 2.5rem;
+  font-weight: 600;
+  transition: background-color 0.2s; // Smooth transition
+}

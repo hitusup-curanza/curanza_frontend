@@ -1,0 +1,57 @@
+<section class="sync-slay-section py-5 px-3">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-8">
+        <h1 class="heading-text text-center">
+          Confused<span class="highlight-text">?</span> Sync & Slay<span class="highlight-text">.</span>
+        </h1>
+
+        <p class="sub-text mx-auto mt-3 mb-4 text-center">
+          Feeling lost? Book a one-on-one with your **Curranza hype guru**. We'll spill the tea, help you decode the
+          perfect flow, & supercharge your pre-trip energy.
+        </p>
+
+        <button (click)="toggleSection()" class="btn btn-schedule shadow-sm mb-3 rounded-5 d-block mx-auto">
+          Schedule a Call
+        </button>
+        <br>
+        <!-- Section to hide/unhide -->
+        <ng-template [ngIf]="showSection">
+          <ion-card class="shadow rounded-1 p-4">
+            <ion-card-content>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Full Name</label>
+                    <input type="text" class="form-control" id="exampleFormControlInput1">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="mb-3">
+                    <label for="exampleFormControlInput2" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput2">
+                  </div>
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlInput3" class="form-label">Phone Number</label>
+                <input type="number" [maxLength]="10" class="form-control" id="exampleFormControlInput3">
+              </div>
+
+              <button class="btn btn-Next rounded-1 float-end">
+                Next
+              </button>
+
+            </ion-card-content>
+          </ion-card>
+
+        </ng-template>
+
+
+        <p class="email-text mt-4 text-center ">
+          Or email us directly at <a href="mailto:hitisup@curanza.in" class="email-link">hitisup@curanza.in</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
